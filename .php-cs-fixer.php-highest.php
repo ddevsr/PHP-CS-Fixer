@@ -12,8 +12,8 @@ declare(strict_types=1);
  * with this source code in the file LICENSE.
  */
 
-if (PHP_VERSION_ID < 8_03_00 || PHP_VERSION_ID >= 8_04_00) {
-    fwrite(STDERR, "PHP CS Fixer's config for PHP-HIGHEST can be executed only on highest supported PHP version - 8.3.*.\n");
+if (PHP_VERSION_ID < 8_03_00 || PHP_VERSION_ID >= 8_05_00) {
+    fwrite(STDERR, "PHP CS Fixer's config for PHP-HIGHEST can be executed only on highest supported PHP version - 8.4.*.\n");
     fwrite(STDERR, "Running it on lower PHP version would prevent calling migration rules.\n");
 
     exit(1);

@@ -12,7 +12,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  PHP_MAX: '8.3'
+  PHP_MAX: '8.4'
   PHP_MIN: '7.4'
 
 jobs:
@@ -156,13 +156,11 @@ jobs:
             php-version: '8.4'
             job-description: 'Fixer'
             run-fixer: 'yes'
-            PHP_CS_FIXER_IGNORE_ENV: 1
 
           - operating-system: 'ubuntu-24.04'
             php-version: '8.4'
             job-description: 'tests'
             run-tests: 'yes'
-            PHP_CS_FIXER_IGNORE_ENV: 1
 
     name: PHP ${{ matrix.php-version }} ${{ matrix.job-description }}
 
